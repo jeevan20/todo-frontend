@@ -1,0 +1,370 @@
+:root {
+  --primary: #00a796;
+  --primary-dark: #026158;
+  --dark: #1f2732;
+  --dark-light: #2a343f;
+  --white: #fff;
+  --red: #fc6666;
+}
+/* var(--primary) */
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font-family: sans-serif;
+}
+
+/* Header component */
+.main-header {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.main-header .main-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header-left a {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.main-header-left a:hover {
+  opacity: 0.7;
+}
+.main-header-bt {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.main-header-bt:hover {
+  background-color: var(--primary-dark);
+  cursor: pointer;
+}
+
+/* Auth Compoent */
+.auth {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.auth-box {
+  margin: 10px;
+  max-width: 500px;
+  width: 100%;
+  padding-top: 40px;
+  padding: 30px;
+  background-color: var(--dark-light);
+  color: var(--white);
+  border-radius: 5px;
+}
+.auth-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-field {
+  margin-bottom: 25px;
+}
+
+.auth-field label {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 10px;
+}
+.auth-field input {
+  background-color: var(--dark);
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+}
+.auth-btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.auth-bt:hover {
+  background-color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.auth-btn:disabled {
+  background-color: var(--primary-dark);
+}
+
+.auth_register {
+  text-align: center;
+  margin-top: 20px;
+}
+.auth_register a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  padding-left: 5px;
+}
+.auth_register a:hover {
+  opacity: 0.7;
+}
+.auth-field .auth-error {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--red);
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+.auth-error {
+  font-size: 1rem;
+  color: var(--red);
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Loading div */
+.loading {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dashboard */
+
+.dashboard {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dashboard-box {
+  width: 600px;
+  height: 1vh;
+}
+.dashboard-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.dashboard-header h3 {
+  font-size: 1.7rem;
+}
+
+.dashboard-field {
+  margin-bottom: 25px;
+}
+
+.dashboard-field label {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 20px;
+}
+.dashboard-field input {
+  background-color: var(--primary-dark);
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+}
+.dashboard-btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.dashboard-btn:hover {
+  background-color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.todo-box-complete {
+  margin-top: 24px;
+}
+.todo-box-complete h3 {
+  font-size: 1.5rem;
+}
+
+/* todo add component */
+
+.todo-add-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: var(--dark-light);
+}
+
+.todo-add-item input {
+  width: 100%;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  padding: 7px 10px;
+  background-color: var(--dark);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--white);
+}
+.todo-add-item .todo-add-btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  width: fit-content;
+}
+.todo-add-btn:hover {
+  background-color: var(--primary-dark);
+  cursor: pointer;
+}
+.todo-add-btn:disabled {
+  background: var(--primary-dark);
+}
+
+/* todo Items  */
+.todo-item {
+  margin: 10px;
+  padding: 0px 15px;
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  background-color: var(--dark-light);
+  border-radius: 5px;
+}
+.todo-item input[type="text"] {
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.todo-complete-item input[type="text"] {
+  text-decoration: line-through;
+}
+
+.todo-item .todo-delete-btn,
+.todo-update-btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+.todo-delete-btn:hover {
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.todo-update-btn:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.todo-item input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1rem;
+  height: 1rem;
+  border: 0.1rem solid white;
+  border-radius: 0.2em;
+  display: grid;
+  place-content: center;
+}
+
+.todo-item input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.todo-item input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--white);
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
